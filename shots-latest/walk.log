@@ -10,17 +10,46 @@ tap field 0 at 540 1255
 tap field 1 at 540 1103
 shot: 02-pin-filled
 == unlock (verified, retries) ==
-NOT FOUND (text): Set PIN & Unlock
-visible texts: A | Anita Jewellery | First time here: choose a staff PIN (4+ digits) | •••• | PIN | •••• | Confirm PIN | Set PIN &amp; Unlock
-still locked after attempt 1
-visible texts: A | Anita Jewellery | First time here: choose a staff PIN (4+ digits) | •••• | PIN | •••• | Confirm PIN | Set PIN &amp; Unlock
-NOT FOUND (text): Set PIN & Unlock
-visible texts: A | Anita Jewellery | First time here: choose a staff PIN (4+ digits) | •••• | PIN | •••• | Confirm PIN | Set PIN &amp; Unlock
-still locked after attempt 2
-visible texts: A | Anita Jewellery | First time here: choose a staff PIN (4+ digits) | •••• | PIN | •••• | Confirm PIN | Set PIN &amp; Unlock
-NOT FOUND (text): Set PIN & Unlock
-visible texts: A | Anita Jewellery | First time here: choose a staff PIN (4+ digits) | •••• | PIN | •••• | Confirm PIN | Set PIN &amp; Unlock
-still locked after attempt 3
-visible texts: A | Anita Jewellery | First time here: choose a staff PIN (4+ digits) | •••• | PIN | •••• | Confirm PIN | Set PIN &amp; Unlock
+tap text 'Set PIN & Unlock' at 540 1305
+unlocked on attempt 1
 shot: 03-receipt-form
-WALK ABORTED: could not unlock
+== fill a bill ==
+tap field 0 at 647 581
+tap field 1 at 647 713
+tap field 2 at 647 845
+tap field 3 at 495 1107
+tap field 4 at 536 1270
+shot: 04-bill-filled
+tap text 'Generate' at 540 1301
+shot: 05-bill
+== tabs ==
+tap text 'History' at 420 2234
+shot: 06-history
+tap text 'Products' at 660 2234
+shot: 07-products
+tap text 'Upload' at 902 2234
+shot: 08-upload
+tap text 'Receipt' at 179 2234
+== catalogue picker ==
+tap text 'Catalogue' at 890 1363
+shot: 09-picker
+tap text 'TEST' at 551 737
+shot: 10-picker-added
+== walk done ==
+total 1896
+drwxr-xr-x 2 runner runner   4096 Nov 20 03:07 .
+drwxr-xr-x 6 runner runner   4096 Nov 20 03:05 ..
+-rw-r--r-- 1 runner runner  64725 Nov 20 03:05 01-pin.png
+-rw-r--r-- 1 runner runner 117569 Nov 20 03:05 02-pin-filled.png
+-rw-r--r-- 1 runner runner 167462 Nov 20 03:06 03-receipt-form.png
+-rw-r--r-- 1 runner runner 200425 Nov 20 03:06 04-bill-filled.png
+-rw-r--r-- 1 runner runner 215751 Nov 20 03:06 05-bill.png
+-rw-r--r-- 1 runner runner 219665 Nov 20 03:07 06-history.png
+-rw-r--r-- 1 runner runner 236160 Nov 20 03:07 07-products.png
+-rw-r--r-- 1 runner runner 185500 Nov 20 03:07 08-upload.png
+-rw-r--r-- 1 runner runner 258087 Nov 20 03:07 09-picker.png
+-rw-r--r-- 1 runner runner 180945 Nov 20 03:07 10-picker-added.png
+-rw-r--r-- 1 runner runner  24259 Nov 20 03:06 dump-after-unlock.xml
+-rw-r--r-- 1 runner runner  22055 Nov 20 03:06 dump-bill.xml
+-rw-r--r-- 1 runner runner  14711 Nov 20 03:07 dump-picker.xml
+-rw-r--r-- 1 runner runner   1024 Nov 20 03:07 walk.log
