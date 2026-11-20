@@ -81,14 +81,31 @@ PY
 type() { adb shell input text "$1"; sleep 1; }
 hide_keyboard() { adb shell input keyevent 111; sleep 1; }  # ESC: dismiss keyboard, never exits the app
 
+# Dismiss Android system ANR dialogs ("… isn't responding") that can cover the app.
+dismiss_system_dialogs() {
+  for _ in 1 2 3; do
+    dump_ui
+    if grep -q "isn't responding" /tmp/ui.xml; then
+      echo "system ANR dialog present — tapping Wait"
+      C=$(center_of "Wait")
+      if [ -n "$C" ]; then adb shell input tap $C; fi
+      sleep 3
+    else
+      break
+    fi
+  done
+}
+
 echo "== install =="
 adb install -r "$GITHUB_WORKSPACE/app.apk"
 adb shell am start -n $PKG/.MainActivity
 sleep 8
+dismiss_system_dialogs
 tap_text "Later"            # update dialog, only if an older APK was picked
 shot 01-pin
 
 echo "== set PIN 1234 (emulator only) =="
+dismiss_system_dialogs
 tap_field 0; type 1234
 tap_field 1; type 1234
 shot 02-pin-filled
@@ -97,6 +114,7 @@ echo "== unlock (verified, retries) =="
 UNLOCKED=0
 for i in 1 2 3; do
   hide_keyboard
+  dismiss_system_dialogs
   tap_text "Set PIN & Unlock"
   sleep 3
   if has_text "New Receipt"; then echo "unlocked on attempt $i"; UNLOCKED=1; break; fi

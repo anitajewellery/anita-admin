@@ -74,6 +74,7 @@ jobs:
           git fetch origin emulator-screenshots || true
           git switch -C emulator-screenshots origin/emulator-screenshots 2>/dev/null || git switch -c emulator-screenshots
           mkdir -p shots-latest
+          rm -f shots-latest/*.png shots-latest/*.log shots-latest/*.xml
           cp shots/*.png shots-latest/ 2>/dev/null
           cp shots/*.log shots/*.xml shots-latest/ 2>/dev/null
           git add shots-latest
