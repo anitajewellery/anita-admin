@@ -74,7 +74,8 @@ jobs:
           git fetch origin emulator-screenshots || true
           git switch -C emulator-screenshots origin/emulator-screenshots 2>/dev/null || git switch -c emulator-screenshots
           mkdir -p shots-latest
-          cp shots/*.png shots-latest/
+          cp shots/*.png shots-latest/ 2>/dev/null
+          cp shots/*.log shots/*.xml shots-latest/ 2>/dev/null
           git add shots-latest
           git commit -m "Emulator screenshots (run ${{ github.run_number }})" || echo "nothing new to commit"
           git push origin emulator-screenshots
