@@ -36,20 +36,20 @@ shot: 09-picker
 tap text 'TEST' at 565 748
 shot: 10-picker-added
 == walk done ==
-total 1976
-drwxr-xr-x 2 runner runner   4096 Nov 20 05:01 .
-drwxr-xr-x 6 runner runner   4096 Nov 20 04:58 ..
--rw-r--r-- 1 runner runner  64956 Nov 20 04:58 01-pin.png
--rw-r--r-- 1 runner runner 117403 Nov 20 04:59 02-pin-filled.png
--rw-r--r-- 1 runner runner 176218 Nov 20 04:59 03-receipt-form.png
--rw-r--r-- 1 runner runner 206425 Nov 20 05:00 04-bill-filled.png
--rw-r--r-- 1 runner runner 244605 Nov 20 05:00 05-bill.png
--rw-r--r-- 1 runner runner 235131 Nov 20 05:00 06-history.png
--rw-r--r-- 1 runner runner 278884 Nov 20 05:00 07-products.png
--rw-r--r-- 1 runner runner 199540 Nov 20 05:00 08-upload.png
--rw-r--r-- 1 runner runner 209165 Nov 20 05:01 09-picker.png
--rw-r--r-- 1 runner runner 188873 Nov 20 05:01 10-picker-added.png
--rw-r--r-- 1 runner runner  22889 Nov 20 04:59 dump-after-unlock.xml
--rw-r--r-- 1 runner runner  21023 Nov 20 05:00 dump-bill.xml
--rw-r--r-- 1 runner runner  13383 Nov 20 05:01 dump-picker.xml
--rw-r--r-- 1 runner runner   1024 Nov 20 05:01 walk.log
+total 1960
+drwxr-xr-x 2 runner runner   4096 Nov 20 06:15 .
+drwxr-xr-x 6 runner runner   4096 Nov 20 06:12 ..
+-rw-r--r-- 1 runner runner  64479 Nov 20 06:12 01-pin.png
+-rw-r--r-- 1 runner runner 117075 Nov 20 06:12 02-pin-filled.png
+-rw-r--r-- 1 runner runner 174464 Nov 20 06:13 03-receipt-form.png
+-rw-r--r-- 1 runner runner 206419 Nov 20 06:14 04-bill-filled.png
+-rw-r--r-- 1 runner runner 242712 Nov 20 06:14 05-bill.png
+-rw-r--r-- 1 runner runner 236597 Nov 20 06:14 06-history.png
+-rw-r--r-- 1 runner runner 278192 Nov 20 06:14 07-products.png
+-rw-r--r-- 1 runner runner 199528 Nov 20 06:14 08-upload.png
+-rw-r--r-- 1 runner runner 208526 Nov 20 06:15 09-picker.png
+-rw-r--r-- 1 runner runner 187772 Nov 20 06:15 10-picker-added.png
+-rw-r--r-- 1 runner runner  24231 Nov 20 06:13 dump-after-unlock.xml
+-rw-r--r-- 1 runner runner  21023 Nov 20 06:14 dump-bill.xml
+-rw-r--r-- 1 runner runner  13383 Nov 20 06:15 dump-picker.xml
+-rw-r--r-- 1 runner runner   1024 Nov 20 06:15 walk.log
