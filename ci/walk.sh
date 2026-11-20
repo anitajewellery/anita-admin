@@ -139,11 +139,14 @@ shot 03-receipt-form
 if [ "$UNLOCKED" != "1" ]; then echo "WALK ABORTED: could not unlock"; exit 0; fi
 
 echo "== fill a bill =="
-tap_field 0; type "Emulator%sTest"
-tap_field 1; type 9876543210
-tap_field 2; type "Imphal"
-tap_field 3; type "Necklace%sSet"
-tap_field 4; type 1499
+# Settle the keyboard/layout between fields: with edge-to-edge imePadding the
+# form resizes as the keyboard animates, and a dump taken mid-animation points
+# at stale positions (Run 9 typed the item name into the Address field).
+tap_field 0; type "Emulator%sTest"; hide_keyboard; sleep 2
+tap_field 1; type 9876543210; hide_keyboard; sleep 2
+tap_field 2; type "Imphal"; hide_keyboard; sleep 2
+tap_field 3; type "Necklace%sSet"; hide_keyboard; sleep 2
+tap_field 4; type 1499; hide_keyboard; sleep 2
 hide_keyboard
 shot 04-bill-filled
 tap_text "Generate" contains
