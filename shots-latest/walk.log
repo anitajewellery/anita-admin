@@ -1,0 +1,26 @@
+== install ==
+Performing Streamed Install
+Success
+Starting: Intent { cmp=com.anitajewellery.admin/.MainActivity }
+NOT FOUND (text): Later
+visible texts: A | Anita Jewellery | First time here: choose a staff PIN (4+ digits) | PIN | Confirm PIN | Set PIN &amp; Unlock
+shot: 01-pin
+== set PIN 1234 (emulator only) ==
+tap field 0 at 540 1255
+tap field 1 at 540 1103
+shot: 02-pin-filled
+== unlock (verified, retries) ==
+NOT FOUND (text): Set PIN & Unlock
+visible texts: A | Anita Jewellery | First time here: choose a staff PIN (4+ digits) | •••• | PIN | •••• | Confirm PIN | Set PIN &amp; Unlock
+still locked after attempt 1
+visible texts: A | Anita Jewellery | First time here: choose a staff PIN (4+ digits) | •••• | PIN | •••• | Confirm PIN | Set PIN &amp; Unlock
+NOT FOUND (text): Set PIN & Unlock
+visible texts: A | Anita Jewellery | First time here: choose a staff PIN (4+ digits) | •••• | PIN | •••• | Confirm PIN | Set PIN &amp; Unlock
+still locked after attempt 2
+visible texts: A | Anita Jewellery | First time here: choose a staff PIN (4+ digits) | •••• | PIN | •••• | Confirm PIN | Set PIN &amp; Unlock
+NOT FOUND (text): Set PIN & Unlock
+visible texts: A | Anita Jewellery | First time here: choose a staff PIN (4+ digits) | •••• | PIN | •••• | Confirm PIN | Set PIN &amp; Unlock
+still locked after attempt 3
+visible texts: A | Anita Jewellery | First time here: choose a staff PIN (4+ digits) | •••• | PIN | •••• | Confirm PIN | Set PIN &amp; Unlock
+shot: 03-receipt-form
+WALK ABORTED: could not unlock
