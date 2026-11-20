@@ -43,7 +43,8 @@ try:
 except OSError:
     sys.exit(0)
 for m in re.finditer(r'text="([^"]*)"[^>]*bounds="\[(\d+),(\d+)\]\[(\d+),(\d+)\]"', xml):
-    t = m.group(1)
+    t = (m.group(1).replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>')
+         .replace('&quot;', '"').replace('&apos;', "'"))
     if (mode == 'exact' and t == want) or (mode == 'contains' and want in t):
         print((int(m.group(2)) + int(m.group(4))) // 2, (int(m.group(3)) + int(m.group(5))) // 2)
         break
