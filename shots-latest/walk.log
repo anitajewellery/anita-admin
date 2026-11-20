@@ -2,54 +2,32 @@
 Performing Streamed Install
 Success
 Starting: Intent { cmp=com.anitajewellery.admin/.MainActivity }
+system ANR dialog present — tapping Wait
 NOT FOUND (text): Later
-visible texts: A | Anita Jewellery | First time here: choose a staff PIN (4+ digits) | PIN | Confirm PIN | Set PIN &amp; Unlock
+visible texts: Pixel Launcher isn't responding | Close app | Wait
 shot: 01-pin
 == set PIN 1234 (emulator only) ==
-tap field 0 at 540 1222
-tap field 1 at 540 1422
+system ANR dialog present — tapping Wait
+NOT FOUND (field): 0
+visible texts: Pixel Launcher isn't responding | Close app | Wait
+NOT FOUND (field): 1
+visible texts: Pixel Launcher isn't responding | Close app | Wait
 shot: 02-pin-filled
 == unlock (verified, retries) ==
-tap text 'Set PIN & Unlock' at 540 1624
-unlocked on attempt 1
+system ANR dialog present — tapping Wait
+NOT FOUND (text): Set PIN & Unlock
+visible texts: Pixel Launcher isn't responding | Close app | Wait
+still locked after attempt 1
+visible texts: Pixel Launcher isn't responding | Close app | Wait
+system ANR dialog present — tapping Wait
+NOT FOUND (text): Set PIN & Unlock
+visible texts: Pixel Launcher isn't responding | Close app | Wait
+still locked after attempt 2
+visible texts: Pixel Launcher isn't responding | Close app | Wait
+system ANR dialog present — tapping Wait
+NOT FOUND (text): Set PIN & Unlock
+visible texts: Pixel Launcher isn't responding | Close app | Wait
+still locked after attempt 3
+visible texts: Pixel Launcher isn't responding | Close app | Wait
 shot: 03-receipt-form
-== fill a bill ==
-tap field 0 at 647 598
-tap field 1 at 647 730
-tap field 2 at 647 862
-tap field 3 at 495 1124
-tap field 4 at 536 1240
-shot: 04-bill-filled
-tap text 'Generate' at 540 2005
-shot: 05-bill
-== tabs ==
-tap text 'History' at 420 2245
-shot: 06-history
-tap text 'Products' at 660 2245
-shot: 07-products
-tap text 'Upload' at 902 2245
-shot: 08-upload
-tap text 'Receipt' at 179 2245
-== catalogue picker ==
-tap text 'Catalogue' at 890 1380
-shot: 09-picker
-tap text 'TEST' at 565 748
-shot: 10-picker-added
-== walk done ==
-total 1648
-drwxr-xr-x 2 runner runner   4096 Nov 20 04:41 .
-drwxr-xr-x 6 runner runner   4096 Nov 20 04:38 ..
--rw-r--r-- 1 runner runner  64904 Nov 20 04:39 01-pin.png
--rw-r--r-- 1 runner runner 115434 Nov 20 04:39 02-pin-filled.png
--rw-r--r-- 1 runner runner 176277 Nov 20 04:39 03-receipt-form.png
--rw-r--r-- 1 runner runner 155397 Nov 20 04:40 04-bill-filled.png
--rw-r--r-- 1 runner runner 158131 Nov 20 04:40 05-bill.png
--rw-r--r-- 1 runner runner 160057 Nov 20 04:40 06-history.png
--rw-r--r-- 1 runner runner 160129 Nov 20 04:40 07-products.png
--rw-r--r-- 1 runner runner 191924 Nov 20 04:40 08-upload.png
--rw-r--r-- 1 runner runner 210039 Nov 20 04:41 09-picker.png
--rw-r--r-- 1 runner runner 195798 Nov 20 04:41 10-picker-added.png
--rw-r--r-- 1 runner runner  22889 Nov 20 04:39 dump-after-unlock.xml
--rw-r--r-- 1 runner runner  21893 Nov 20 04:40 dump-bill.xml
--rw-r--r-- 1 runner runner  13383 Nov 20 04:41 dump-picker.xml
--rw-r--r-- 1 runner runner   1024 Nov 20 04:41 walk.log
+WALK ABORTED: could not unlock
