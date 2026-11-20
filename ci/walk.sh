@@ -82,15 +82,28 @@ type() { adb shell input text "$1"; sleep 1; }
 hide_keyboard() { adb shell input keyevent 111; sleep 1; }  # ESC: dismiss keyboard, never exits the app
 
 # Dismiss Android system ANR dialogs ("… isn't responding") that can cover the app.
+# A Pixel Launcher ANR can survive many "Wait" taps (Run 8); if it persists,
+# force-close the LAUNCHER (never our app) so it restarts clean.
+ANR_STREAK=0
 dismiss_system_dialogs() {
   for _ in 1 2 3; do
     dump_ui
     if grep -q "isn't responding" /tmp/ui.xml; then
-      echo "system ANR dialog present — tapping Wait"
-      C=$(center_of "Wait")
-      if [ -n "$C" ]; then adb shell input tap $C; fi
-      sleep 3
+      ANR_STREAK=$((ANR_STREAK+1))
+      if [ "$ANR_STREAK" -ge 3 ] && grep -q "Pixel Launcher" /tmp/ui.xml; then
+        echo "launcher ANR persists (streak $ANR_STREAK) — tapping Close app (launcher restarts)"
+        C=$(center_of "Close app")
+        if [ -n "$C" ]; then adb shell input tap $C; fi
+        ANR_STREAK=0
+        sleep 5
+      else
+        echo "system ANR dialog present — tapping Wait (streak $ANR_STREAK)"
+        C=$(center_of "Wait")
+        if [ -n "$C" ]; then adb shell input tap $C; fi
+        sleep 3
+      fi
     else
+      ANR_STREAK=0
       break
     fi
   done
