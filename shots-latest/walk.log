@@ -18,12 +18,12 @@ tap field 0 at 647 598
 tap field 1 at 647 730
 tap field 2 at 647 862
 tap field 3 at 495 1124
-tap field 4 at 536 1278
+tap field 4 at 536 1240
 shot: 04-bill-filled
 tap text 'Generate' at 540 1301
 shot: 05-bill
 == tabs ==
-tap text 'History' at 420 1541
+tap text 'History' at 420 2245
 shot: 06-history
 tap text 'Products' at 660 2245
 shot: 07-products
@@ -36,20 +36,20 @@ shot: 09-picker
 tap text 'TEST' at 565 748
 shot: 10-picker-added
 == walk done ==
-total 1944
-drwxr-xr-x 2 runner runner   4096 Nov 20 04:55 .
-drwxr-xr-x 6 runner runner   4096 Nov 20 04:52 ..
--rw-r--r-- 1 runner runner  64599 Nov 20 04:52 01-pin.png
--rw-r--r-- 1 runner runner 117376 Nov 20 04:53 02-pin-filled.png
--rw-r--r-- 1 runner runner 176167 Nov 20 04:53 03-receipt-form.png
--rw-r--r-- 1 runner runner 209706 Nov 20 04:54 04-bill-filled.png
--rw-r--r-- 1 runner runner 209706 Nov 20 04:54 05-bill.png
--rw-r--r-- 1 runner runner 241575 Nov 20 04:54 06-history.png
--rw-r--r-- 1 runner runner 278634 Nov 20 04:54 07-products.png
--rw-r--r-- 1 runner runner 199269 Nov 20 04:54 08-upload.png
--rw-r--r-- 1 runner runner 208876 Nov 20 04:55 09-picker.png
--rw-r--r-- 1 runner runner 188567 Nov 20 04:55 10-picker-added.png
--rw-r--r-- 1 runner runner  22889 Nov 20 04:53 dump-after-unlock.xml
--rw-r--r-- 1 runner runner  18202 Nov 20 04:54 dump-bill.xml
--rw-r--r-- 1 runner runner  13383 Nov 20 04:55 dump-picker.xml
--rw-r--r-- 1 runner runner   1024 Nov 20 04:55 walk.log
+total 1976
+drwxr-xr-x 2 runner runner   4096 Nov 20 05:01 .
+drwxr-xr-x 6 runner runner   4096 Nov 20 04:58 ..
+-rw-r--r-- 1 runner runner  64956 Nov 20 04:58 01-pin.png
+-rw-r--r-- 1 runner runner 117403 Nov 20 04:59 02-pin-filled.png
+-rw-r--r-- 1 runner runner 176218 Nov 20 04:59 03-receipt-form.png
+-rw-r--r-- 1 runner runner 206425 Nov 20 05:00 04-bill-filled.png
+-rw-r--r-- 1 runner runner 244605 Nov 20 05:00 05-bill.png
+-rw-r--r-- 1 runner runner 235131 Nov 20 05:00 06-history.png
+-rw-r--r-- 1 runner runner 278884 Nov 20 05:00 07-products.png
+-rw-r--r-- 1 runner runner 199540 Nov 20 05:00 08-upload.png
+-rw-r--r-- 1 runner runner 209165 Nov 20 05:01 09-picker.png
+-rw-r--r-- 1 runner runner 188873 Nov 20 05:01 10-picker-added.png
+-rw-r--r-- 1 runner runner  22889 Nov 20 04:59 dump-after-unlock.xml
+-rw-r--r-- 1 runner runner  21023 Nov 20 05:00 dump-bill.xml
+-rw-r--r-- 1 runner runner  13383 Nov 20 05:01 dump-picker.xml
+-rw-r--r-- 1 runner runner   1024 Nov 20 05:01 walk.log
