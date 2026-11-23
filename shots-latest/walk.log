@@ -2,55 +2,32 @@
 Performing Streamed Install
 Success
 Starting: Intent { cmp=com.anitajewellery.admin/.MainActivity }
+system ANR dialog present — tapping Wait (streak 1)
 NOT FOUND (text): Later
-visible texts: A | ANITA | JEWELLERY | HOME TO HOME · SINCE 2009 | First time here: choose a staff PIN (4+ digits) | PIN | Confirm PIN | Set PIN &amp; Unlock
+visible texts: Pixel Launcher isn't responding | Close app | Wait
 shot: 01-pin
 == set PIN 1234 (emulator only) ==
-tap field 0 at 540 1365
-tap field 1 at 540 1182
+system ANR dialog present — tapping Wait (streak 1)
+NOT FOUND (field): 0
+visible texts: Pixel Launcher isn't responding | Close app | Wait
+NOT FOUND (field): 1
+visible texts: Pixel Launcher isn't responding | Close app | Wait
 shot: 02-pin-filled
 == unlock (verified, retries) ==
-tap text 'Set PIN & Unlock' at 540 1384
-unlocked on attempt 1
+system ANR dialog present — tapping Wait (streak 1)
+NOT FOUND (text): Set PIN & Unlock
+visible texts: Pixel Launcher isn't responding | Close app | Wait
+still locked after attempt 1
+visible texts: Pixel Launcher isn't responding | Close app | Wait
+system ANR dialog present — tapping Wait (streak 1)
+NOT FOUND (text): Set PIN & Unlock
+visible texts: Pixel Launcher isn't responding | Close app | Wait
+still locked after attempt 2
+visible texts: Pixel Launcher isn't responding | Close app | Wait
+system ANR dialog present — tapping Wait (streak 1)
+NOT FOUND (text): Set PIN & Unlock
+visible texts: Pixel Launcher isn't responding | Close app | Wait
+still locked after attempt 3
+visible texts: Pixel Launcher isn't responding | Close app | Wait
 shot: 03-receipt-form
-== fill a bill ==
-tap field 0 at 647 598
-tap field 1 at 647 730
-tap field 2 at 647 862
-tap field 3 at 495 1124
-tap field 4 at 536 1240
-shot: 04-bill-filled
-tap text 'Generate' at 540 1301
-shot: 05-bill
-== tabs ==
-tap text 'History' at 347 2245
-shot: 06-history
-tap text 'Products' at 539 2245
-shot: 07-products
-tap text 'Upload' at 733 2245
-shot: 08-upload
-tap text 'Receipt' at 154 2245
-== catalogue picker ==
-tap text 'Catalogue' at 890 1380
-shot: 09-picker
-NOT FOUND (text): TEST
-visible texts: Pick from catalogue | Tap a product to add it to the bill, with its price filled in. | Search products… | Kullu Necklace | Necklace | ₹1,500 | Kullu khokhor | Earrings | ₹2,600 | Close
-shot: 10-picker-added
-== walk done ==
-total 1900
-drwxr-xr-x 2 runner runner   4096 Nov 21 09:25 .
-drwxr-xr-x 6 runner runner   4096 Nov 21 09:22 ..
--rw-r--r-- 1 runner runner  73692 Nov 21 09:22 01-pin.png
--rw-r--r-- 1 runner runner 126880 Nov 21 09:22 02-pin-filled.png
--rw-r--r-- 1 runner runner 182926 Nov 21 09:23 03-receipt-form.png
--rw-r--r-- 1 runner runner 214933 Nov 21 09:24 04-bill-filled.png
--rw-r--r-- 1 runner runner 252789 Nov 21 09:24 05-bill.png
--rw-r--r-- 1 runner runner 146021 Nov 21 09:24 06-history.png
--rw-r--r-- 1 runner runner 218701 Nov 21 09:24 07-products.png
--rw-r--r-- 1 runner runner 229062 Nov 21 09:24 08-upload.png
--rw-r--r-- 1 runner runner 208609 Nov 21 09:25 09-picker.png
--rw-r--r-- 1 runner runner 208609 Nov 21 09:25 10-picker-added.png
--rw-r--r-- 1 runner runner  25560 Nov 21 09:23 dump-after-unlock.xml
--rw-r--r-- 1 runner runner  22353 Nov 21 09:24 dump-bill.xml
--rw-r--r-- 1 runner runner   7870 Nov 21 09:25 dump-picker.xml
--rw-r--r-- 1 runner runner   1257 Nov 21 09:25 walk.log
+WALK ABORTED: could not unlock
